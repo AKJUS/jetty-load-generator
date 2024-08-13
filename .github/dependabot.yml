@@ -30,6 +30,17 @@ updates:
       - dependency-name: "org.eclipse.jetty:*"
         versions: [ ">=12.0.0" ]
 
+
+  - package-ecosystem: "maven"
+    directory: "/"
+    open-pull-requests-limit: 50
+    target-branch: "4.0.x"
+    schedule:
+      interval: "daily"
+    ignore:
+      - dependency-name: "org.eclipse.jetty:*"
+        versions: [ ">=12.1.0" ]
+
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
