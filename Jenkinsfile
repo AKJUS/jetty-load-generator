@@ -1,6 +1,6 @@
 #!groovy
 
-def oss = ["linux"]
+def oss = ["linux-light"]
 def jdks = ["jdk17", "jdk21"]
 
 def builds = [:]
