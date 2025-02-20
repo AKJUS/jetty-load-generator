@@ -9,9 +9,6 @@ pipeline {
     buildDiscarder logRotator( numToKeepStr: '60' )
     disableRestartFromStage()
   }
-  environment {
-    LAUNCHABLE_TOKEN = credentials('launchable-token')
-  }
   stages {
     stage("Parallel Stage") {
       parallel {
