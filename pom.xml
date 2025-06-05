@@ -16,7 +16,9 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <jetty.version>12.0.21</jetty.version>
+    <jetty.version>12.0.22</jetty.version>
+    <njord.autoPublish>true</njord.autoPublish>
+    <njord.version>0.7.1</njord.version>
   </properties>
 
   <licenses>
@@ -254,6 +256,11 @@
     <pluginManagement>
       <plugins>
         <plugin>
+          <groupId>eu.maveniverse.maven.plugins</groupId>
+          <artifactId>njord</artifactId>
+          <version>${njord.version}</version>
+        </plugin>
+        <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-clean-plugin</artifactId>
           <version>3.5.0</version>
@@ -346,6 +353,14 @@
         </plugin>
       </plugins>
     </pluginManagement>
+
+    <extensions>
+      <extension>
+        <groupId>eu.maveniverse.maven.njord</groupId>
+        <artifactId>extension</artifactId>
+        <version>${njord.version}</version>
+      </extension>
+    </extensions>
   </build>
 
   <developers>
