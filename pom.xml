@@ -36,7 +36,7 @@
     <connection>scm:git:git://github.com/jetty-project/jetty-load-generator.git</connection>
     <developerConnection>scm:git:ssh://git@github.com/jetty-project/jetty-load-generator.git</developerConnection>
     <url>https://github.com/jetty-project/jetty-load-generator</url>
-    <tag>jetty-load-generator-4.0.15</tag>
+    <tag></tag>
   </scm>
 
   <distributionManagement>
@@ -401,28 +401,5 @@
       </build>
     </profile>
   </profiles>
-
-  <repositories>
-    <repository>
-      <id>jetty.snapshot</id>
-      <url>https://oss.sonatype.org/content/repositories/jetty-snapshots/</url>
-      <releases>
-        <enabled>false</enabled>
-      </releases>
-      <snapshots>
-        <enabled>true</enabled>
-      </snapshots>
-    </repository>
-    <repository>
-      <id>jetty.staging</id>
-      <url>https://oss.sonatype.org/content/groups/jetty-with-staging</url>
-      <releases>
-        <enabled>true</enabled>
-      </releases>
-      <snapshots>
-        <enabled>false</enabled>
-      </snapshots>
-    </repository>
-  </repositories>
 
 </project>
